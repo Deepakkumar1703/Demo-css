@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak demo styling</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            display: block;
+            position: sticky;
+            top: 0%;
+        }
+
+        h1 {
+            text-align: center;
+            background: rgb(4, 25, 44);
+            padding: 5px;
+            color: rgb(239, 225, 247);
+        }
+
+        .square {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: auto;
+            height: auto;
+            background: rgb(12, 30, 51);
+            padding: 50px;
+            margin: 20px;
+        }
+
+        .childsquare {
+            width: 200px;
+            height: 200px;
+            background: rgb(201, 145, 156);
+            margin: 20px;
+        }
+
+        .childsquare .square-text {
+            position: relative;
+            top: 50%;
+            text-align: center;
+            transform: translate(0, -50%);
+            color: azure;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .square-text h3 {
+            letter-spacing: 1px;
+        }
+
+        .square-text h3::first-letter {
+            color: blue;
+            font-size: 18px;
+        }
+
+        .childsquare:nth-child(even) {
+            background: rgb(27, 226, 133);
+        }
+
+        .square:hover .childsquare:nth-child(even) {
+            background-color: rgb(201, 145, 156);
+        }
+
+        .square:hover .childsquare:nth-child(odd) {
+            background-color: rgb(27, 226, 133);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h1 style="text-transform: capitalize;">hai... Im deepak</h1>
+    </div>
+    <div style="margin-top: 10px;" class="square">
+        <div class="childsquare">
+            <div class="square-text">
+                <h3>Qualification</h3>
+            </div>
+        </div>
+        <div class="childsquare">
+            <div class="square-text">
+                <h3>Projects</h3>
+            </div>
+        </div>
+        <div class="childsquare">
+            <div class="square-text">
+                <h3>Hobbies</h3>
+            </div>
+        </div>
+        <div class="childsquare">
+            <div class="square-text">
+                <h3>Key skills</h3>
+            </div>
+        </div>
+    </div>
+    <div class="bgimage">
+        <div class="backsetimg">
+        </div>
+    </div>
+    <div class="card-main">
+        <div class="card">
+        <div class="card-title">
+            <h3>Motivation</h3>
+        </div>
+        <div class="card-content">
+            <h4>Motivation is the word derived from the word 'motive' which means needs, desires, wants or drives within
+                the individuals. It is the process of stimulating people to actions to accomplish the goals. In the work
+                goal context the psychological factors stimulating the people's behaviour can be - desire for money.
+            </h4>
+        </div>
+        <div class="cardbtn">
+            <button>More</button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
